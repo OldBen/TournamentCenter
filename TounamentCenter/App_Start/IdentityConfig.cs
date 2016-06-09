@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using TounamentCenter.Models;
+using TournamentCenter.Models;
 
-namespace TounamentCenter
+namespace TournamentCenter
 {
     public class EmailService : IIdentityMessageService
     {

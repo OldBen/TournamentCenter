@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using TounamentCenter.Models;
+using TournamentCenter.Models;
 
-namespace TounamentCenter.Controllers
+namespace TournamentCenter.Controllers
 {
     [Authorize]
     public class ManageController : Controller

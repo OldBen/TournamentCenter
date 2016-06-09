@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(TounamentCenter.Startup))]
-namespace TounamentCenter
+[assembly: OwinStartupAttribute(typeof(TournamentCenter.Startup))]
+namespace TournamentCenter
 {
     public partial class Startup
     {

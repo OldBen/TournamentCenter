@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace TounamentCenter
+namespace TournamentCenter
 {
     public class FilterConfig
     {

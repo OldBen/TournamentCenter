@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using TounamentCenter.Models;
+using TournamentCenter.Models;
 
-namespace TounamentCenter
+namespace TournamentCenter
 {
     public partial class Startup
     {
