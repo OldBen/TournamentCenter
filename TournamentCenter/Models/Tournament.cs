@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -24,7 +25,7 @@ namespace TournamentCenter.Models
             get { return name; }
             set { name = value; }
         }
-        
+        [DataType(DataType.Date)]
         public DateTime Date
         {
             get { return date; }
