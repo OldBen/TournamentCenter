@@ -65,6 +65,12 @@ namespace TournamentCenter.Models
     public class RegisterViewModel
     {
         [Required]
+        [RegularExpression("^[A-Z][a-z]* [A-Z][a-z]*$", ErrorMessage = "Given information is not a proper name.")]
+        [StringLength(40, ErrorMessage = "Name you've given is too long.")]
+        [Display(Name ="First Name and Surname")]
+        public string UserName { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
