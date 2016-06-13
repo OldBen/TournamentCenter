@@ -8,7 +8,15 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm("Index", "Tournaments", FormMethod.Get))
+    {
+    <p>
+        Search for tournament: @Html.TextBox("Query") <br />
+        <input type="submit" value="Search..." />
+    </p>
+    }
 </p>
+
 <table class="table">
     <tr>
         <th>

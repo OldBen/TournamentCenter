@@ -15,9 +15,23 @@ namespace TounamentCenter.Controllers
         private TournamentDbContext db = new TournamentDbContext();
 
         // GET: Tournaments
-        public ActionResult Index()
+        public ActionResult Index(string query)
         {
-            return View(db.Tournament.ToList());
+            if (!String.IsNullOrEmpty(query))
+            {
+                var tournaments = from t in db.Tournament
+                                  where t.TournamentName.Contains(query)
+                                  orderby t.Date ascending
+                                  select t;
+                return View(tournaments);
+            }
+            else
+            {
+                var tournaments = from t in db.Tournament
+                                  orderby t.Date ascending
+                                  select t;
+                return View(tournaments);
+            }
         }
 
         // GET: Tournaments/Details/5
