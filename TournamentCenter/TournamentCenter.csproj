@@ -206,6 +206,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GmailEmailService.cs" />
     <Compile Include="Migrations\201606091233386_RemoveLogo.cs" />
     <Compile Include="Migrations\201606091233386_RemoveLogo.Designer.cs">
       <DependentUpon>201606091233386_RemoveLogo.cs</DependentUpon>
@@ -284,6 +285,7 @@
     <Content Include="Views\Tournaments\Details.cshtml" />
     <Content Include="Views\Tournaments\Edit.cshtml" />
     <Content Include="Views\Tournaments\Index.cshtml" />
+    <Content Include="Views\Account\ShowMsg.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
