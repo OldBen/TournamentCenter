@@ -45,9 +45,7 @@ namespace TournamentCenter.Models
 
 
         [Display(Name = "Registration Deadline", Description = "Date when the registrations will be closed.")]
-        [DataType(DataType.DateTime)]
-        [Required]
-        [Range(typeof(DateTime), "01/01/2001", "31/12/2099")]
+        [DataType(DataType.Date)]
         public DateTime Deadline
         {
             get { return deadline; }
@@ -82,9 +80,8 @@ namespace TournamentCenter.Models
 
 
         [Display(Name = "Date", Description = "Date of the event.")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         [Required]
-        [Range(typeof(DateTime), "01/01/2001", "31/12/2099")]
         public DateTime Date
         {
             get { return date; }

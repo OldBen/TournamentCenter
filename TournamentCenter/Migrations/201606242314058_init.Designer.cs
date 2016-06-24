@@ -7,13 +7,13 @@ namespace TounamentCenter.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ModelRebuild : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ModelRebuild));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606242001536_Model-Rebuild"; }
+            get { return "201606242314058_init"; }
         }
         
         string IMigrationMetadata.Source

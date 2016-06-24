@@ -207,13 +207,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="GmailEmailService.cs" />
-    <Compile Include="Migrations\201606091233386_RemoveLogo.cs" />
-    <Compile Include="Migrations\201606091233386_RemoveLogo.Designer.cs">
-      <DependentUpon>201606091233386_RemoveLogo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606242001536_Model-Rebuild.cs" />
-    <Compile Include="Migrations\201606242001536_Model-Rebuild.Designer.cs">
-      <DependentUpon>201606242001536_Model-Rebuild.cs</DependentUpon>
+    <Compile Include="Migrations\201606242314058_init.cs" />
+    <Compile Include="Migrations\201606242314058_init.Designer.cs">
+      <DependentUpon>201606242314058_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -303,11 +299,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606091233386_RemoveLogo.resx">
-      <DependentUpon>201606091233386_RemoveLogo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606242001536_Model-Rebuild.resx">
-      <DependentUpon>201606242001536_Model-Rebuild.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606242314058_init.resx">
+      <DependentUpon>201606242314058_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

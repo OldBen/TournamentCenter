@@ -11,35 +11,11 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Players)
+            @Html.DisplayNameFor(model => model.TournamentName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Players)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SponsorLogoUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SponsorLogoUrl)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Organizer)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Organizer)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Deadline)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Deadline)
+            @Html.DisplayFor(model => model.TournamentName)
         </dd>
 
         <dt>
@@ -48,14 +24,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Sport)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TournamentName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TournamentName)
         </dd>
 
         <dt>
@@ -75,12 +43,45 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.Deadline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deadline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Players)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Players)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.ParticipantsLimit)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.ParticipantsLimit)
         </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SponsorLogoUrl)
+        </dt>
+
+        <dd>
+            <img src="@Html.DisplayFor(model => model.SponsorLogoUrl)" alt="no image" height="400" width="400" />
+        </dd>
+
 
     </dl>
 </div>
