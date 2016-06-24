@@ -8,19 +8,14 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
-    @using (Html.BeginForm("Index", "Tournaments", FormMethod.Get))
-    {
-    <p>
-        Search for tournament: @Html.TextBox("Query") <br />
-        <input type="submit" value="Search..." />
-    </p>
-    }
 </p>
-
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.TournamentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sport)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Date)
@@ -29,7 +24,7 @@
             @Html.DisplayNameFor(model => model.Location)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ParticipantsLimit)
+            @Html.DisplayNameFor(model => model.Deadline)
         </th>
         <th></th>
     </tr>
@@ -40,13 +35,16 @@
             @Html.DisplayFor(modelItem => item.TournamentName)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Sport)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Date)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Location)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ParticipantsLimit)
+            @Html.DisplayFor(modelItem => item.Deadline)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

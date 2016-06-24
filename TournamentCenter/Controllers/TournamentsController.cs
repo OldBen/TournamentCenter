@@ -15,23 +15,9 @@ namespace TounamentCenter.Controllers
         private TournamentDbContext db = new TournamentDbContext();
 
         // GET: Tournaments
-        public ActionResult Index(string query)
+        public ActionResult Index()
         {
-            if (!String.IsNullOrEmpty(query))
-            {
-                var tournaments = from t in db.Tournament
-                                  where t.TournamentName.Contains(query)
-                                  orderby t.Date ascending
-                                  select t;
-                return View(tournaments);
-            }
-            else
-            {
-                var tournaments = from t in db.Tournament
-                                  orderby t.Date ascending
-                                  select t;
-                return View(tournaments);
-            }
+            return View(db.Tournament.ToList());
         }
 
         // GET: Tournaments/Details/5
@@ -60,7 +46,7 @@ namespace TounamentCenter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,TournamentName,Date,Location,ParticipantsLimit")] Tournament tournament)
+        public ActionResult Create([Bind(Include = "Id,Players,SponsorLogoUrl,Organizer,Deadline,Sport,TournamentName,Date,Location,ParticipantsLimit")] Tournament tournament)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +78,7 @@ namespace TounamentCenter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,TournamentName,Date,Location,ParticipantsLimit")] Tournament tournament)
+        public ActionResult Edit([Bind(Include = "Id,Players,SponsorLogoUrl,Organizer,Deadline,Sport,TournamentName,Date,Location,ParticipantsLimit")] Tournament tournament)
         {
             if (ModelState.IsValid)
             {

@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201606091233386_RemoveLogo.Designer.cs">
       <DependentUpon>201606091233386_RemoveLogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606242001536_Model-Rebuild.cs" />
+    <Compile Include="Migrations\201606242001536_Model-Rebuild.Designer.cs">
+      <DependentUpon>201606242001536_Model-Rebuild.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -280,12 +284,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\ShowMsg.cshtml" />
     <Content Include="Views\Tournaments\Create.cshtml" />
     <Content Include="Views\Tournaments\Delete.cshtml" />
     <Content Include="Views\Tournaments\Details.cshtml" />
     <Content Include="Views\Tournaments\Edit.cshtml" />
     <Content Include="Views\Tournaments\Index.cshtml" />
-    <Content Include="Views\Account\ShowMsg.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -301,6 +305,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201606091233386_RemoveLogo.resx">
       <DependentUpon>201606091233386_RemoveLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606242001536_Model-Rebuild.resx">
+      <DependentUpon>201606242001536_Model-Rebuild.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
